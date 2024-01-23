@@ -6,8 +6,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
-
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 dependencies:
   flutter:
     sdk: flutter
@@ -20,8 +20,26 @@ dependencies:
 
   flutter_enterpriselayer:
     git:
-      url: https://LeoRc01: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@github.com/dev-boringstuff/FlutterEnterpriseLayer
+      url: https://github.com/dev-boringstuff/FlutterEnterpriseLayer
       ref: develop
+
+  package_info_plus: ^5.0.1
+
+dependency_overrides:
+  flutter_enterpriselayer:
+    git:
+      url: https://github.com/dev-boringstuff/FlutterEnterpriseLayer
+      ref: develop
+
+  boring_table_v2:
+    git:
+      url: https://github.com/BoringStuff-SRL/BoringTable
+      ref: testing
+
+  boringcore:
+    git:
+      url: https://github.com/BoringStuff-SRL/BoringCore
+      ref: main
 
 dev_dependencies:
   flutter_test:
@@ -35,6 +53,7 @@ flutter:
   assets:
     - assets/translations/
     - assets/fonts/
+    - assets/images/
 
 
   # To add custom fonts to your application, add a fonts section here,

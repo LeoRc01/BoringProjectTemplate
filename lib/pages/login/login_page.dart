@@ -1,5 +1,5 @@
 import 'package:boring_ui/boring_ui.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class LoginPage extends BoringPage {
   static const String label = 'Login';
@@ -13,8 +13,11 @@ class LoginPage extends BoringPage {
   bool get hideFromNavigation => true;
 
   @override
-  Widget builder(BuildContext context, GoRouterState state) =>
-      LoginView(image: Text('YOUR LOGO HERE'));
+  Widget builder(BuildContext context, GoRouterState state) => LoginView(
+        image: Image.asset(
+          'assets/images/logo.png',
+        ),
+      );
 
   @override
   BoringNavigationEntry get navigationEntry =>

@@ -54,7 +54,7 @@ packages:
     description:
       path: "."
       ref: develop-2
-      resolved-ref: "169ce68833d984c42aa93bea3a5999339095b22f"
+      resolved-ref: caf6c6223728810ecdeea1639845c7d7cd26a8aa
       url: "https://github.com/BoringStuff-SRL/FlutterBoringApp.git"
     source: git
     version: "0.0.1"
@@ -63,17 +63,17 @@ packages:
     description:
       path: "."
       ref: v2
-      resolved-ref: a3f32c57371ea477cfeb9d97a101ca35fc637a5a
+      resolved-ref: "70ad242a05f7b0841ab404368734007a27737b2a"
       url: "https://github.com/BoringStuff-SRL/FlutterBoringForm.git"
     source: git
     version: "0.0.1"
   boring_table_v2:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "."
       ref: testing
-      resolved-ref: "10f0c7bd2a957915edbb76527eb02a2af756c820"
-      url: "https://LeoRc01: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@github.com/BoringStuff-SRL/BoringTable"
+      resolved-ref: "261814552a2a94db35977648812c687dad16dc60"
+      url: "https://github.com/BoringStuff-SRL/BoringTable"
     source: git
     version: "1.0.0+1"
   boring_ui:
@@ -81,17 +81,17 @@ packages:
     description:
       path: "."
       ref: develop-3
-      resolved-ref: "65cd412f15478f7849db96b4bf87398cbc6f7988"
+      resolved-ref: "50029eb64e27bb77bad0497e4a492662b2200909"
       url: "https://github.com/BoringStuff-SRL/BoringUI"
     source: git
     version: "1.0.0"
   boringcore:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "."
       ref: main
-      resolved-ref: eb93f1685dfed4dd61f479ed388869cc162d0bf3
-      url: "https://github.com/BoringStuff-SRL/BoringCore.git"
+      resolved-ref: "345295c3b2109ef68935d89c8042eafa7c2e1efd"
+      url: "https://github.com/BoringStuff-SRL/BoringCore"
     source: git
     version: "1.0.0+1"
   characters:
@@ -218,10 +218,10 @@ packages:
     dependency: transitive
     description:
       name: ffi
-      sha256: "7bf0adc28a23d395f19f3f1eb21dd7cfd1dd9f8e1c50051c069122e6853bc878"
+      sha256: "493f37e7df1804778ff3a53bd691d8692ddf69702cf4c1c1096a2e41b4779e21"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.0"
+    version: "2.1.2"
   file:
     dependency: transitive
     description:
@@ -320,8 +320,8 @@ packages:
     description:
       path: "."
       ref: develop
-      resolved-ref: a7142a786842ba45ab324288455f93cc63d5fc81
-      url: "https://LeoRc01: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@github.com/dev-boringstuff/FlutterEnterpriseLayer"
+      resolved-ref: "8fdd67361238d9783ef83f48a8361560161887b0"
+      url: "https://github.com/dev-boringstuff/FlutterEnterpriseLayer"
     source: git
     version: "0.0.1"
   flutter_lints:
@@ -418,18 +418,18 @@ packages:
     dependency: transitive
     description:
       name: flutter_web_auth_2
-      sha256: "0da41e631a368e02366fc1a9b79dd8da191e700a836878bc54466fff51c07df2"
+      sha256: "3ea3a0cc539ca74319f4f2f7484f62742fe5b2ff9a0fca37575426d6e6f07901"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.1"
+    version: "3.1.1"
   flutter_web_auth_2_platform_interface:
     dependency: transitive
     description:
       name: flutter_web_auth_2_platform_interface
-      sha256: f6fa7059ff3428c19cd756c02fef8eb0147131c7e64591f9060c90b5ab84f094
+      sha256: e8669e262005a8354389ba2971f0fc1c36188481234ff50d013aaf993f30f739
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.4"
+    version: "3.1.0"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -571,14 +571,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.1"
-  linked_scroll_controller:
+  leak_tracker:
     dependency: transitive
     description:
-      name: linked_scroll_controller
-      sha256: e6020062bcf4ffc907ee7fd090fa971e65d8dfaac3c62baf601a3ced0b37986a
+      name: leak_tracker
+      sha256: f8cdf1383f5b4672a2693d875f1f239af6bd7e4a8925a17ef7219226db932624
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.0"
+    version: "10.0.1"
+  leak_tracker_flutter_testing:
+    dependency: transitive
+    description:
+      name: leak_tracker_flutter_testing
+      sha256: a2055640bf5bc903475e4bbdb34e04f8bf698542bee41edec47d337a5939e1ae
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3"
+  leak_tracker_testing:
+    dependency: transitive
+    description:
+      name: leak_tracker_testing
+      sha256: e62042d479c4c139dd774125ed4dfbde646b8f07ac228e3c1b57a3d91d6d9df4
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.2"
   lints:
     dependency: transitive
     description:
@@ -607,26 +623,26 @@ packages:
     dependency: transitive
     description:
       name: matcher
-      sha256: "1803e76e6653768d64ed8ff2e1e67bea3ad4b923eb5c56a295c3e634bad5960e"
+      sha256: d2323aa2060500f906aa31a895b4030b6da3ebdcc5619d14ce1aada65cd161cb
       url: "https://pub.dev"
     source: hosted
-    version: "0.12.16"
+    version: "0.12.16+1"
   material_color_utilities:
     dependency: transitive
     description:
       name: material_color_utilities
-      sha256: "9528f2f296073ff54cb9fee677df673ace1218163c3bc7628093e7eed5203d41"
+      sha256: "0e0a020085b65b6083975e499759762399b4475f766c21668c4ecca34ea74e5a"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.8.0"
   meta:
     dependency: transitive
     description:
       name: meta
-      sha256: a6e590c838b18133bb482a2745ad77c5bb7715fb0451209e1a7567d416678b8e
+      sha256: d584fa6707a52763a52446f02cc621b077888fb63b93bbcb1143a7be5a0c0c04
       url: "https://pub.dev"
     source: hosted
-    version: "1.10.0"
+    version: "1.11.0"
   mime:
     dependency: transitive
     description:
@@ -639,10 +655,10 @@ packages:
     dependency: transitive
     description:
       name: month_picker_dialog
-      sha256: a9cb49811d9b1c859211f70fe8e3542c86c4fc3e3667df7fca9526ceee4af675
+      sha256: ebd4c1d5ad3f1dcae4f771e9126124391fae6b22567758ff861f81bd81f3b777
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.0"
+    version: "2.6.0"
   nested:
     dependency: transitive
     description:
@@ -659,14 +675,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.9"
+  package_info_plus:
+    dependency: "direct main"
+    description:
+      name: package_info_plus
+      sha256: "88bc797f44a94814f2213db1c9bd5badebafdfb8290ca9f78d4b9ee2a3db4d79"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.1"
+  package_info_plus_platform_interface:
+    dependency: transitive
+    description:
+      name: package_info_plus_platform_interface
+      sha256: "9bc8ba46813a4cc42c66ab781470711781940780fd8beddd0c3da62506d3a6c6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.1"
   path:
     dependency: transitive
     description:
       name: path
-      sha256: "8829d8a55c13fc0e37127c29fedf290c102f4e40ae94ada574091fe0ff96c917"
+      sha256: "087ce49c3f0dc39180befefc60fdb4acd8f8620e5682fe2476afd0b3688bb4af"
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.3"
+    version: "1.9.0"
   path_parsing:
     dependency: transitive
     description:
@@ -806,10 +838,11 @@ packages:
   screenshot:
     dependency: transitive
     description:
-      name: screenshot
-      sha256: "455284ff1f5b911d94a43c25e1385485cf6b4f288293eba68f15dad711c7b81c"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: master
+      resolved-ref: "6b6e0d0ef1250c625b69c0890e9b2343ee3a2dd6"
+      url: "https://github.com/LeoRc01/screenshot"
+    source: git
     version: "2.1.0"
   shared_preferences:
     dependency: transitive
@@ -1012,10 +1045,10 @@ packages:
     dependency: transitive
     description:
       name: time
-      sha256: "83427e11d9072e038364a5e4da559e85869b227cf699a541be0da74f14140124"
+      sha256: ad8e018a6c9db36cb917a031853a1aae49467a93e0d464683e029537d848c221
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.3"
+    version: "2.1.4"
   timezone:
     dependency: transitive
     description:
@@ -1028,10 +1061,10 @@ packages:
     dependency: transitive
     description:
       name: two_dimensional_scrollables
-      sha256: "3aa17c75bd4932e5e44ced27af72e8cff0b5f40bb6ef2a96c7427613970b54de"
+      sha256: "1dfd2d0768d29e2c65fed59c8e7e61fae6f8796d6c493583b30d91d05136c25e"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5+1"
+    version: "0.0.6"
   typed_data:
     dependency: transitive
     description:
@@ -1060,10 +1093,10 @@ packages:
     dependency: transitive
     description:
       name: url_launcher
-      sha256: d25bb0ca00432a5e1ee40e69c36c85863addf7cc45e433769d61bed3fe81fd96
+      sha256: c512655380d241a337521703af62d2c122bf7b77a46ff7dd750092aa9433499c
       url: "https://pub.dev"
     source: hosted
-    version: "6.2.3"
+    version: "6.2.4"
   url_launcher_android:
     dependency: transitive
     description:
@@ -1168,14 +1201,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  vm_service:
+    dependency: transitive
+    description:
+      name: vm_service
+      sha256: b3d56ff4341b8f182b96aceb2fa20e3dcb336b9f867bc0eafc0de10f1048e957
+      url: "https://pub.dev"
+    source: hosted
+    version: "13.0.0"
   web:
     dependency: transitive
     description:
       name: web
-      sha256: afe077240a270dcfd2aafe77602b4113645af95d0ad31128cc02bce5ac5d5152
+      sha256: "4188706108906f002b3a293509234588823c8c979dc83304e229ff400c996b05"
       url: "https://pub.dev"
     source: hosted
-    version: "0.3.0"
+    version: "0.4.2"
   win32:
     dependency: transitive
     description:
@@ -1217,5 +1258,5 @@ packages:
     source: hosted
     version: "6.2.2"
 sdks:
-  dart: ">=3.2.3 <4.0.0"
-  flutter: ">=3.16.0"
+  dart: ">=3.3.0-279.1.beta <4.0.0"
+  flutter: ">=3.18.0-18.0.pre.54"
