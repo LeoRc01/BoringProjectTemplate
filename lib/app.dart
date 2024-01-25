@@ -1,4 +1,5 @@
-import 'package:boring_template/pages/example_page_1/example_page.dart';
+import 'package:boring_template/pages/commissions/commissions_page.dart';
+import 'package:boring_template/pages/example_page_1/employees_page.dart';
 import 'package:boring_template/template_widgets/boring_drawer_header.dart';
 import 'package:boring_template/template_widgets/boring_footer_drawer.dart';
 import 'package:boring_template/template_widgets/boring_theme.dart';
@@ -38,7 +39,12 @@ class App extends StatelessWidget {
 
   List<BoringPage> get _pages => [
         LoginPage(),
-        ExamplePage(),
+        EmployeesPage(),
+        CommissionsPage(),
+        BoringPageWidget(
+          navigationEntry: BoringNavigationEntry('/test', label: 'test'),
+          builder: (context, state) => Text('123'),
+        )
       ];
 
   AppBar? _appBarBuilder(
@@ -66,7 +72,7 @@ class App extends StatelessWidget {
     appBarNotifier.reset();
     if (await EnterpriseLayer.auth.isAuthorized()) {
       if (state.fullPath == '/login') {
-        return ExamplePage.path;
+        return EmployeesPage.path;
       }
       return null;
     } else {

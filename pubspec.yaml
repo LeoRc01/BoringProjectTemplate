@@ -21,30 +21,21 @@ dependencies:
   flutter_enterpriselayer:
     git:
       url: https://github.com/dev-boringstuff/FlutterEnterpriseLayer
-      ref: develop
+      ref: main
 
   package_info_plus: ^5.0.1
+  flutter_riverpod: ^2.4.9
 
-dependency_overrides:
-  flutter_enterpriselayer:
-    git:
-      url: https://github.com/dev-boringstuff/FlutterEnterpriseLayer
-      ref: develop
-
-  boring_table_v2:
-    git:
-      url: https://github.com/BoringStuff-SRL/BoringTable
-      ref: testing
-
-  boringcore:
-    git:
-      url: https://github.com/BoringStuff-SRL/BoringCore
-      ref: main
+  # rrule: ^0.2.14
+  # xml: ^6.5.0
+  # pdf: ^3.10.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  custom_lint: ^0.5.8
+  riverpod_lint: ^2.3.7
 
 flutter:
 
